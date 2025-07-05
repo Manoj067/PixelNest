@@ -987,10 +987,22 @@ function App() {
               <div className="bg-white rounded-2xl p-8 shadow-lg">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Contact</h3>
                 <div className="space-y-4">
-                  <div>
+                  {/* <div>
                     <span className="text-sm font-medium text-gray-700">Email</span>
                     <p className="text-blue-600">pixelnest.dev@gmail.com</p>
-                  </div>
+                  </div> */}
+                  <div>
+  <span className="text-sm font-medium text-gray-700">Email</span>
+  <p>
+    <a
+      href="mailto:pixelnest.dev@gmail.com"
+      className="text-blue-600 hover:underline"
+    >
+      pixelnest.dev@gmail.com
+    </a>
+  </p>
+</div>
+
                   <div>
                    <div className='text-sm font-medium text-gray-700'>Bengaluru</div>
                   </div>
@@ -1107,59 +1119,59 @@ function App() {
                 </button>
               </form> */}
               <form
-  action="https://formspree.io/f/xldnkrld"
-  method="POST"
-  className="space-y-6"
->
-  {/* Hidden fields (optional but helpful) */}
-  <input type="hidden" name="_subject" value="New Contact from PixelNest" />
-  <input type="hidden" name="_captcha" value="false" />
+                action="https://formspree.io/f/xldnkrld"
+                method="POST"
+                className="space-y-6"
+              >
+               {/* Hidden fields (optional but helpful) */}
+                <input type="hidden" name="_subject" value="New Contact from PixelNest" />
+                <input type="hidden" name="_captcha" value="false" />
 
-  {/* Form Fields */}
-  <div className="grid md:grid-cols-2 gap-6">
-    <div>
-      <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-        First Name
-      </label>
-      <input
-        type="text"
-        id="firstName"
-        name="firstName"
-        required
-        className="w-full px-4 py-3 border border-gray-300 rounded-xl"
-        placeholder="John"
-      />
-    </div>
+                {/* Form Fields */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                      First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl"
+                      placeholder="John"
+                    />
+                  </div>
 
-    <div>
-      <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-        Last Name
-      </label>
-      <input
-        type="text"
-        id="lastName"
-        name="lastName"
-        required
-        className="w-full px-4 py-3 border border-gray-300 rounded-xl"
-        placeholder="Doe"
-      />
-    </div>
-  </div>
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl"
+                      placeholder="Doe"
+                    />
+                  </div>
+                  </div>
 
-  <div>
-    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-      Email Address
-    </label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      className="w-full px-4 py-3 border border-gray-300 rounded-xl"
-      placeholder="john@example.com"
-    />
-  </div>
-  <div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+                  <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
                     Company (Optional)
                   </label>
@@ -1188,29 +1200,27 @@ function App() {
                   </select>
                 </div>
 
-  <div>
-    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-      Message
-    </label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      required
-      className="w-full px-4 py-3 border border-gray-300 rounded-xl"
-      placeholder="Tell us about your project..."
-    ></textarea>
-  </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl"
+                    placeholder="Tell us about your project..."
+                  ></textarea>
+                </div>
 
-  <button
-    type="submit"
-    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-medium hover:shadow-lg transition-all duration-300"
-  >
-    Send Message
-  </button>
-</form>
-
-
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-medium hover:shadow-lg transition-all duration-300"
+              >
+                Send Message
+              </button>
+            </form>
             </div>
           </div>
         </div>
