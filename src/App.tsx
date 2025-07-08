@@ -528,7 +528,6 @@ function App() {
                   </ul>
                 </div>
 
-                
 
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Business Value</h3>
@@ -536,33 +535,6 @@ function App() {
                     {selectedProject.businessValue}
                   </p>
                 </div>
-
-                {/* {(selectedProject.liveUrl || selectedProject.githubUrl) && (
-                  <div className="flex space-x-4 pt-4">
-                    {selectedProject.liveUrl && (
-                      <a
-                        href={selectedProject.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300 flex items-center space-x-2"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                        <span>View Live Site</span>
-                      </a>
-                    )}
-                    {selectedProject.githubUrl && (
-                      <a
-                        href={selectedProject.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="border-2 border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-medium hover:border-blue-600 hover:text-blue-600 transition-all duration-300 flex items-center space-x-2"
-                      >
-                        <Code2 className="w-5 h-5" />
-                        <span>View Code</span>
-                      </a>
-                    )}
-                  </div>
-                )} */}
               </div>
             </div>
           </div>
@@ -992,17 +964,16 @@ function App() {
                     <p className="text-blue-600">pixelnest.dev@gmail.com</p>
                   </div> */}
                   <div>
-  <span className="text-sm font-medium text-gray-700">Email</span>
-  <p>
-    <a
-      href="mailto:pixelnest.dev@gmail.com"
-      className="text-blue-600 hover:underline"
-    >
-      pixelnest.dev@gmail.com
-    </a>
-  </p>
-</div>
-
+                      <span className="text-sm font-medium text-gray-700">Email</span>
+                      <p>
+                        <a
+                          href="mailto:pixelnest.dev@gmail.com"
+                          className="text-blue-600 hover:underline"
+                        >
+                          pixelnest.dev@gmail.com
+                        </a>
+                      </p>
+                    </div>
                   <div>
                    <div className='text-sm font-medium text-gray-700'>Bengaluru</div>
                   </div>
@@ -1243,6 +1214,20 @@ function App() {
               <div className="flex space-x-4">
                 {/* Social media icons would go here */}
               </div>
+              <div>
+                      <span className="text-sm font-medium whitespace-nowrap">Email</span>
+                      <p>
+                        <a
+                          href="mailto:pixelnest.dev@gmail.com"
+                          className="text-blue-600 hover:underline"
+                        >
+                          pixelnest.dev@gmail.com
+                        </a>
+                      </p>
+                    </div>
+                  <div>
+                   <div className='text-sm font-medium whitespace-nowrap'>Bengaluru</div>
+                  </div>
             </div>
 
             <div>
